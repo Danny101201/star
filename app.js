@@ -20,7 +20,9 @@ function resize() {
 
 }
 function animationLoop() {
-    c.clearRect(0, 0, w, h)
+    c.fillStyle = 'rgba(0,0,0,0.1)'
+    c.fillRect(0,0,w,h)
+    // c.clearRect(0, 0, w, h)
     requestAnimationFrame(animationLoop)
     drowScence()
 }
